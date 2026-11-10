@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SRIRAM – Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#top">SRIRAM</a>
+    <nav aria-label="Sections">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="wrap intro">
+      <span class="hi">Hello, I’m</span>
+      <h1>SRIRAM</h1>
+      <div class="role" aria-live="off">I build <b id="typed"></b><span class="caret"></span></div>
+      <p class="lead">Software developer focused on clean code, dependable systems and interfaces people enjoy using.</p>
+      <div class="cta">
+        <a class="btn pri" href="#contact">Get in touch</a>
+        <a class="btn sec" href="#skills">View skills</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" class="reveal">
+    <div class="wrap">
+      <h2>About me</h2>
+      <div class="about" style="margin-top:30px">
+        <div>
+          <p>I’m a developer based in Sivakasi, Tamil Nadu. I enjoy taking an idea from a rough sketch to a working product, and I care about code that’s readable, tested and easy to maintain.</p>
+          <p>I’m looking for a team where I can keep learning, ship real features and work closely with designers and other engineers.</p>
+        </div>
+        <div class="facts">
+          <div class="fact"><span>Location</span><strong>Sivakasi, India</strong></div>
+          <div class="fact"><span>Focus</span><strong>Full-stack web development</strong></div>
+          <div class="fact"><span>Status</span><strong>Open to opportunities</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="reveal">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card"><h3>Languages</h3>
+          <div class="sk"><div class="l">JavaScript<em>90%</em></div><div class="track"><div class="fill" data-w="90"></div></div></div>
+          <div class="sk"><div class="l">Python<em>80%</em></div><div class="track"><div class="fill" data-w="80"></div></div></div>
+          <div class="sk"><div class="l">SQL<em>75%</em></div><div class="track"><div class="fill" data-w="75"></div></div></div>
+        </div>
+        <div class="card"><h3>Frontend</h3>
+          <div class="sk"><div class="l">HTML &amp; CSS<em>92%</em></div><div class="track"><div class="fill" data-w="92"></div></div></div>
+          <div class="sk"><div class="l">React<em>82%</em></div><div class="track"><div class="fill" data-w="82"></div></div></div>
+          <div class="sk"><div class="l">Responsive design<em>88%</em></div><div class="track"><div class="fill" data-w="88"></div></div></div>
+        </div>
+        <div class="card"><h3>Backend</h3>
+          <div class="sk"><div class="l">Node.js<em>80%</em></div><div class="track"><div class="fill" data-w="80"></div></div></div>
+          <div class="sk"><div class="l">REST APIs<em>85%</em></div><div class="track"><div class="fill" data-w="85"></div></div></div>
+          <div class="sk"><div class="l">MySQL<em>72%</em></div><div class="track"><div class="fill" data-w="72"></div></div></div>
+        </div>
+        <div class="card"><h3>Tools</h3>
+          <div class="sk"><div class="l">Git &amp; GitHub<em>88%</em></div><div class="track"><div class="fill" data-w="88"></div></div></div>
+          <div class="sk"><div class="l">Linux<em>70%</em></div><div class="track"><div class="fill" data-w="70"></div></div></div>
+          <div class="sk"><div class="l">VS Code<em>95%</em></div><div class="track"><div class="fill" data-w="95"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="contact" style="margin-top:30px">
+        <div>
+          <p>Have a project, a role or a question? Send a message and I’ll reply by email.</p>
+          <div class="links">
+            <a href="mailto:sreram150@example.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>MAIL</a>
+            <a href="https://github.com/Sreram150"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg>GitHub</a>
+            <a href="https://linkedin.com/in/sriram-b-39b98542b"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-5m0 2c0-3 4-3 4 0v3"/></svg>LinkedIn</a>
+          </div>
+        </div>
+        <form id="contactForm">
+          <label>Name <input name="name" required autocomplete="name"></label>
+          <label>Email <input name="email" type="email" required autocomplete="email"></label>
+          <label>Message <textarea name="message" required></textarea></label>
+          <button class="btn pri" type="submit">Send message</button>
+          <p id="status" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>© <span id="yr"></span> SRIRAM. All rights reserved.</footer>
+
+<script>
+(function(){
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  // Typing effect
+  var words=['web applications','clean APIs','fast interfaces','reliable software'],typed=document.getElementById('typed'),w=0,c=0,del=false;
+  function tick(){
+    var word=words[w];
+    typed.textContent=word.slice(0,c);
+    if(!del&&c<word.length){c++;setTimeout(tick,85)}
+    else if(!del){del=true;setTimeout(tick,1500)}
+    else if(c>0){c--;setTimeout(tick,45)}
+    else{del=false;w=(w+1)%words.length;setTimeout(tick,300)}
+  }
+  if(reduce){typed.textContent=words[0]}else{tick()}
+
+  // Scroll reveal + skill bars
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      e.target.classList.add('in');
+      e.target.querySelectorAll('.fill').forEach(function(f,i){
+        setTimeout(function(){f.style.width=f.dataset.w+'%'},reduce?0:i*120);
+      });
+      io.unobserve(e.target);
+    });
+  },{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(function(s){io.observe(s)});
+
+  // Scroll progress + active nav
+  var bar=document.getElementById('progress'),links=document.querySelectorAll('.bar nav a'),secs=['about','skills','contact'].map(function(id){return document.getElementById(id)});
+  function onScroll(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+    bar.style.width=(max>0?h.scrollTop/max*100:0)+'%';
+    var cur=-1;secs.forEach(function(s,i){if(s.getBoundingClientRect().top<window.innerHeight*.4)cur=i});
+    links.forEach(function(a,i){a.classList.toggle('on',i===cur)});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // Contact form -> opens email app
+  document.getElementById('contactForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=e.target;
+    var s=encodeURIComponent('Message from '+f.name.value);
+    var b=encodeURIComponent(f.message.value+'\n\n'+f.name.value+' ('+f.email.value+')');
+    document.getElementById('status').textContent='Opening your email app to send the message.';
+    window.location.href='mailto:you@example.com?subject='+s+'&body='+b;
+  });
+})();
+</script>
+</body>
+</html>
